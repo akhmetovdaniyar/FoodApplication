@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">FoodApplication</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="menu_bar">Главная</string>
+    <string name="search_bar">Поиск</string>
+    <string name="basket_bar">Корзина</string>
+    <string name="account_bar">Аккаунт</string>
+
+    <string name="location">Ваше местоположение</string>
+    <string name="date">Дата</string>
+
+    <string name="category">Наименование категории</string>
+    <string name="type">Тип</string>
+    <string name="Dish">Блюдо</string>
+    <string name="weight">Вес</string>
+    <string name="desc">Описание</string>
+    <string name="add_to_bas">Добавить в корзину</string>
+    <string name="price">0000 Р</string>
+    <string name="example_count">10</string>
+
+    <string name="dialog_attention">Данный функционал добавится в ближайшем времени! Скоро все будет ;)</string>
+
+</resources>

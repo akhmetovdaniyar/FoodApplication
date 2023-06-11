@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialog_menu"
+    android:layout_width="343dp"
+    android:layout_height="488dp"
+    app:cardCornerRadius="30dp"
+    app:cardElevation="20dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginEnd="4dp">
+
+
+
+    <ImageView
+        android:id="@+id/image_dish"
+        android:layout_width="311dp"
+        android:layout_height="228dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:importantForAccessibility="no" />
+
+    <TextView
+        android:id="@+id/name_dish"
+        android:layout_width="311dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="246dp"
+        android:maxWidth="80dp"
+        android:paddingTop="4dp"
+        android:text="@string/Dish"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="278dp"
+        android:maxWidth="80dp"
+        android:paddingTop="4dp"
+        android:text="@string/price"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="278dp"
+        android:maxWidth="80dp"
+        android:paddingTop="4dp"
+        android:text="@string/weight"
+        android:textColor="@color/grey"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/desc"
+        android:layout_width="308dp"
+        android:layout_height="98dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="306dp"
+        android:maxWidth="308dp"
+        android:paddingTop="4dp"
+        android:text="@string/desc"
+        android:textColor="@color/grey"
+        android:textSize="14sp"
+        android:scrollbars="vertical"/>
+
+    <Button
+        android:id="@+id/add_bas"
+        android:layout_width="309dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="416dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="@color/color1"
+        android:text="@string/add_to_bas"
+        app:cornerRadius="10dp" />
+
+    <ImageButton
+        android:id="@+id/cross_exit"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="14dp"
+        android:scaleX="0.33"
+        android:scaleY="0.33"
+        android:src="@drawable/ic_cross" />
+
+    <ImageButton
+        android:id="@+id/like"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="244dp"
+        android:layout_marginTop="14dp"
+        android:background="@color/white"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_like" />
+
+</androidx.cardview.widget.CardView>
