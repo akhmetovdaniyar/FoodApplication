@@ -1,4 +1,4 @@
-# WeatherApp
+# FoodApplication
 **Тестовое задание**
 ____
 ## Описание
