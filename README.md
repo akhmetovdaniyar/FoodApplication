@@ -9,6 +9,7 @@ ____
 - RecyclerView
 - Retrofit, Glide
 - Coroutines
+- Dependency Injection - Koin
 - Модули - app, data
 ## Скриншоты
 ![Alt-текст](https://raw.githubusercontent.com/akhmetovdaniyar/FoodApplication/master/screenshots/Screenshot_1.png)
