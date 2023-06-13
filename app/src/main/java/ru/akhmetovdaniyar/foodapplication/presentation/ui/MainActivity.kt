@@ -5,6 +5,8 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
+import org.koin.android.ext.android.inject
+import org.koin.androidx.viewmodel.ext.android.viewModel
 import ru.akhmetovdaniyar.foodapplication.R
 import ru.akhmetovdaniyar.foodapplication.data.ApiService
 import ru.akhmetovdaniyar.foodapplication.databinding.ActivityMainBinding
@@ -14,13 +16,16 @@ import ru.akhmetovdaniyar.foodapplication.presentation.FirstViewModel
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-    //private val myViewModel: FirstViewModel by viewModels()
+    private val apiService: ApiService by inject()
+    private val myViewModel by viewModel<FirstViewModel>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         loadFragment(FragmentMainMenu())
+
+
 
 
         binding.bottomNavigationView.menu.findItem(R.id.search_bar).isCheckable = false
@@ -51,8 +56,8 @@ class MainActivity : AppCompatActivity() {
             val dialog = DialogFutureFunctional()
             dialog.show(fragmentManager, "dialog")
         }
-        ApiService.getInstance()
 
+        apiService
     }
 
     private fun loadFragment(fragment: Fragment){
